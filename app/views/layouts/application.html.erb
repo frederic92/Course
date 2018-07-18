@@ -5,13 +5,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class="navigation">
-          <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <nav class="navbar navbar-expand-lg navbar-light">
             <%= link_to "PIKTOCHART", root_path, class: "navbar-brand" %>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
             </div>
             <div class="auth-buttons">
               <% if user_signed_in? %>
-                <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: 'btn btn-success logout' %>
+                <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: 'btn btn-danger logout' %>
               <% else %>
                 <%= link_to "LOG IN", new_user_session_path, class: "btn btn-primary login" %>
                 <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary signup" %>

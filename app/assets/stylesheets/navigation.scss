@@ -1,11 +1,12 @@
 
 .navbar {
-  padding: 25px 50px;
-  background-color: #1C1330;
+  padding: 20px 50px;
+  background-color: $mainColor;
 }
+
 a.navbar-brand {
     font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 3px;
     color: #ffffff !important;
@@ -20,18 +21,23 @@ a.nav-link {
   font-weight: 700;
 }
 
+a.nav-link:hover {
+  color: #A2C1F6 !important;
+}
+
+
 a.login {
-  color: #0A1754;
+  background-color: $mainColor;
+  border-color: $mainColor;
+  color: #ffffff;
   font-size: 12px;
   letter-spacing: 2px;
   line-height: 15px;
   font-weight: 700;
-  padding: 10px 20px;
-  background-color: #ffffff;
-  border-color: #ffffff;
 }
 
-a.signup {
+
+a.signup, a.signup:hover, a.signup:active, a.signup:visited, a.signup:focus, a.login:hover {
   color: #ffffff;
   font-size: 12px;
   letter-spacing: 2px;
@@ -39,6 +45,26 @@ a.signup {
   font-weight: 700;
   padding: 10px 20px;
   margin-left: 5px;
+  background-color: $secondColor;
+  border-color: $secondColor;
+}
+
+a.logout {
+  color: #795CEC;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  border-color: $secondColor;
+}
+
+a.logout:hover {
+  background-color: $mainColor;
+  color: #ffffff;
+  border-color: $mainColor;
 }
 
 li.nav-item {
