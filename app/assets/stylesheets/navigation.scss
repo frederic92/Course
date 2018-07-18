@@ -1,0 +1,46 @@
+
+.navbar {
+  padding: 25px 50px;
+  background-color: #1C1330;
+}
+a.navbar-brand {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #ffffff !important;
+    margin-right: 80px;
+}
+
+a.nav-link {
+  color: #ffffff !important;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+a.login {
+  color: #0A1754;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+a.signup {
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+
+li.nav-item {
+  margin: 0px 25px;
+}

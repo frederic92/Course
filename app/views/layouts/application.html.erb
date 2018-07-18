@@ -4,17 +4,48 @@
     <title>Course</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href="https://fonts.googleapis.com/css?family=Lato:500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="navigation">
+          <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <%= link_to "PIKTOCHART", root_path, class: "navbar-brand" %>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FEATURES <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ENTREPRENEURS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PROJECTS</a>
+                </li>
+              </ul>
+            </div>
+            <div class="auth-buttons">
+              <% if user_signed_in? %>
+                <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: 'btn btn-success logout' %>
+              <% else %>
+                <%= link_to "LOG IN", new_user_session_path, class: "btn btn-primary login" %>
+                <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary signup" %>
+              <% end %>
+            </div>
+          </nav>
+    </div>
+    <!--
     <div class="notice-alert">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
     </div>
+    -->
 
     <%= yield %>
 
