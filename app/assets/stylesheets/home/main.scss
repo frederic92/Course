@@ -1,0 +1,77 @@
+.featured-dev {
+  padding: 30px 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.featured-products {
+  background-color: #ffffff;
+
+  .title {
+    margin: 15px 0px;
+    padding: 20px 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: #6B7C91;
+    }
+  }
+}
+
+.title h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.question-block {
+  background-color: #2D3E4F;
+  border-radius: 1%;
+  padding-bottom: 5px !important;
+  margin-bottom: 10px;
+
+  .img-block {
+    padding-right: 0px !important;
+  }
+
+  img {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+  }
+
+  h4 {
+    color: #747F8B;
+    font-size: 16px !important;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  p {
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  p:hover {
+    text-decoration: underline;
+  }
+}
+
+.col-md-2.img-block {
+  padding-right: 0px !important;
+}
+
+.Projects-list {
+  background-color: #EFEFEF;
+
+  .card {
+    margin-bottom: 20px;
+    border: 2px solid #E8E9EB;
+  }
+}

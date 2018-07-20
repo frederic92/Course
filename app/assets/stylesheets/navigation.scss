@@ -1,7 +1,12 @@
 
 .navbar {
-  padding: 20px 50px;
-  background-color: $mainColor;
+  padding: 10px 0px;;
+  background-color: #EFEFEF;
+}
+
+
+ul.navbar-nav {
+  margin-left: 80px;
 }
 
 a.navbar-brand {
@@ -9,31 +14,33 @@ a.navbar-brand {
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 3px;
-    color: #ffffff !important;
+    color: #000000 !important;
     margin-right: 80px;
+    margin-bottom: 0px;
 }
 
 a.nav-link {
-  color: #ffffff !important;
-  font-size: 12px;
+  color: #272727 !important;
+  font-size: 12.8px;
   letter-spacing: 2px;
   line-height: 15px;
-  font-weight: 700;
+  font-weight: 400;
+  padding: 15px 0px;
 }
 
 a.nav-link:hover {
-  color: #A2C1F6 !important;
+  color: #455AFB !important;
 }
 
 
 a.login {
-  background-color: $mainColor;
-  border-color: $mainColor;
-  color: #ffffff;
-  font-size: 12px;
+  background-color: #EFEFEF;
+  border-color: #EFEFEF;
+  color: #959595;
+  font-size: 12.8px;
   letter-spacing: 2px;
   line-height: 15px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 
@@ -45,8 +52,8 @@ a.signup, a.signup:hover, a.signup:active, a.signup:visited, a.signup:focus, a.l
   font-weight: 700;
   padding: 10px 20px;
   margin-left: 5px;
-  background-color: $secondColor;
-  border-color: $secondColor;
+  background-color: $mainColor;
+  border-color: $mainColor;
 }
 
 a.logout {
@@ -68,5 +75,10 @@ a.logout:hover {
 }
 
 li.nav-item {
-  margin: 0px 25px;
+  margin: 0px 15px;
+}
+
+.profile-link img {
+  border-radius: 50%;
+  margin-left: 20px;
 }

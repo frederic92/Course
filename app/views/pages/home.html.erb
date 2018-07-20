@@ -1,8 +1,65 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="container center jumbo-hero">
-    <h1 class="display-4">Create Beautiful Infographics</h1>
-    <p class="lead"><strong>Engage</strong> with fellow ruby on rails developers.</p>
-    <%= link_to 'JOIN THE COMMUNITY!', new_user_registration_path, class: "btn btn-primay jumbo-btn" %>
-    <i class="fas fa-angle-double-down"><i>
+<section class="header">
+    <div class="jumbotron">
+        <h1 class="display-4">Meet the Rails developer<br> community</h1>
+        <%= link_to 'JOIN TODAY', new_user_registration_path, class: "btn btn-primay jumbo-btn" %>
+    </div>
+</section>
+<section class="main">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="featured-dev">
+        <div class="title">
+          <h4>Featured developers</h4>
+        </div>
+        <hr>
+        <p>Keep shipping for consecutive days to earn a streak.</p>
+        <div class="dev-list">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+        <% 4.times do |t| %>
+          <div class="col-md-6">
+            <div class="question-block">
+              <div class="row">
+                <div class="col-md-2 img-block">
+                  <img src="https://placeimg.com/40/40/tech">
+                </div>
+                <div class="col-md-10">
+                  <h4>Frederic Mbea</h4>
+                  <p>How do someone become a senior ruby on rails developer?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="featured-products">
+        <div class="title">
+          <h3>Featured Projects. <span> This are the various projects developers are working on. Check them out for more info.</span></h3>
+        </div>
+      </div>
+      <div class="Projects-list">
+        <div class="row">
+          <% 24.times do |t| %>
+            <div class="col-sm-4">
+              <div class="card">
+                <img class="card-img-top" src="https://placeimg.com/180/120/people" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          <% end %>
+
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>

@@ -1,27 +1,28 @@
 .jumbotron {
-  height: 100vh;
-  background-color: $mainColor;
+  height: 260px;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  background-image: linear-gradient(rgba(11, 9, 9, 0.75), rgba(11, 9, 9, 0.75)), url("close-up-code-codes-239898.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 h1.display-4, p.lead {
   color: #ffffff;
 }
 
-.jumbo-hero {
-  margin-top: 70px;
-}
 
 h1.display-4 {
   font-size: 48px !important;
   line-height: 48px;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  font-weight: 900 !important;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-weight: 700 !important;
 
 }
 
 p.lead {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 27px;
   font-weight: 400;
@@ -29,21 +30,14 @@ p.lead {
 }
 
 a.jumbo-btn, a.jumbo-btn:hover {
-  font-family: "Lato", Helvetica, sans-serif;
-  background-color: $secondColor !important;
+  font-family: system-ui, "Lato", Helvetica, sans-serif;
+  background-color: $mainColor !important;
   padding: 15px 50px;
   color: #ffffff;
-  border-color: $secondColor;
+  border-color: $mainColor;
+  border-radius: 5%;
   font-size: 12px;
   letter-spacing: 2px;
   line-height: 15px;
   font-weight: 700;
-}
-
-.fa-angle-double-down {
-  display: block;
-  margin-top: 0px;
-  font-size: 30px;
-  color: #ffffff;
-  margin-top: 135px;
 }

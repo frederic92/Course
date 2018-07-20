@@ -1,19 +1,28 @@
 body {
-  background-color: #F7F8FA;
+  background-color: #EFEFEF;
+}
+
+.contain {
+  margin: 0px 34px;
 }
 
 h1 {
-  font-family: 'Lato', Helvetica, sans-serif !important;
+  font-family: system-ui, 'Lato', Helvetica, sans-serif !important;
   font-size: 30px !important;
   font-weight: 700 !important;
   color: #21425E;
 }
 
+h2, h3, h4, h5, h6 {
+  font-family: system-ui, 'Lato', Helvetica, sans-serif !important;
+  color: #000000;
+}
+
 h4 {
   font-family: 'Lato', Helvetica, sans-serif !important;
-  font-size: 24px !important;
-  font-weight: 700 !important;
-  color: #21425E;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  color: #000000;
 
 }
 
