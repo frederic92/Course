@@ -9,7 +9,7 @@ body {
 h1 {
   font-family: system-ui, 'Lato', Helvetica, sans-serif !important;
   font-size: 30px !important;
-  font-weight: 700 !important;
+  /*font-weight: 700 !important;*/
   color: #21425E;
 }
 
@@ -19,22 +19,22 @@ h2, h3, h4, h5, h6 {
 }
 
 h4 {
-  font-family: 'Lato', Helvetica, sans-serif !important;
+  font-family: system-ui, 'Lato', Helvetica, sans-serif !important;
   font-size: 20px !important;
-  font-weight: 400 !important;
+  /*font-weight: 400 !important;*/
   color: #000000;
 
 }
 
 h6 {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: system-ui, 'Lato', Helvetica, sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  /*font-weight: 500;*/
   color: #6B7C92;
 }
 
 p {
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: system-ui, 'Lato', Helvetica, sans-serif;
   font-size: 15px;
   color: #6B7C92;
 }
