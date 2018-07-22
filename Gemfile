@@ -12,6 +12,8 @@ gem 'bootstrap', '~> 4.1.1'
 
 gem 'devise'
 # Use postgresql as the database for Active Record
+gem "font-awesome-rails"
+
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
