@@ -1,78 +1,37 @@
 <section class="header">
-    <div class="jumbotron">
-        <h1 class="display-4">Meet the Rails developer<br> community</h1>
-        <%= link_to 'JOIN TODAY', new_user_registration_path, class: "btn btn-primay jumbo-btn" %>
-    </div>
+    <%= render "pages/home/jumbotron" %>
 </section>
+
 <section class="main">
+
   <div class="row">
     <div class="col-md-3">
-      <div class="featured-dev">
-        <div class="card">
-          <div class="title card-header">
-            <h4>Featured Developers</h4>
-          </div>
-          <ul class="list-group list-group-flush">
-            <% 20.times do |t| %>
-              <li class="list-group-item">
-                <div class="row">
-                  <div class="col-md-2 img-block">
-                    <img src="https://placeimg.com/40/40/tech">
-                  </div>
-                  <div class="col-md-10">
-                    <h4 class="dev-name">Frederic Mbea</h4>
-                    <p>@fredmbea</p>
-                  </div>
-                </div>
-              </li>
-            <% end %>
-          </ul>
+      <%= render "pages/home/featured-dev/featured-dev" %>
+    </div>
+
+    <div class="col-md-9">
+      <div class="question-list">
+        <div class="row">
+          <% 4.times do |t| %>
+            <%= render "pages/home/question/question-card" %>
+          <% end %>
         </div>
       </div>
-    </div>
-    <div class="col-md-9">
-      <div class="row">
-        <% 4.times do |t| %>
-          <div class="col-md-6">
-            <div class="question-block">
-              <div class="row">
-                <div class="col-md-2 img-block">
-                  <img src="https://placeimg.com/40/40/tech">
-                </div>
-                <div class="col-md-10">
-                  <h4>Frederic Mbea</h4>
-                  <p>How do someone become a senior ruby on rails developer?</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
 
-      <div class="featured-products">
+
+      <div class="featured-products-bar">
         <div class="title">
           <h3><span class="new-badge">NEW</span>Featured Projects. <span> These are the various projects developers are working on. Check them out.</span></h3>
         </div>
       </div>
-      <div class="Projects-list">
-        <div class="row">
-          <% 24.times do |t| %>
-            <div class="col-sm-4">
-              <div class="card">
-                <div class="card-image">
-                  <img class="card-img-top" src="/assets/project-image2.png" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
+
+      <%= render "pages/home/project/project-list" %>
+
       </div>
     </div>
   </div>
+</section>
+
+<section class="footer">
+
 </section>

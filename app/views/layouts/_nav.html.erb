@@ -1,0 +1,33 @@
+<div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <%= link_to "PIKTOCHART", root_path, class: "navbar-brand" %>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="fa fa-tasks"></span>PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="fa fa-code"></span>DEVELOPERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><span class="fa fa-comments"></span>MESSENGER<span class="new-badge">NEW</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="auth-buttons">
+          <% if user_signed_in? %>
+            <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: 'btn btn-danger logout' %>
+          <% else %>
+            <%= link_to "LOG IN", new_user_session_path, class: "btn btn-primary login" %>
+            <%= link_to "SIGN UP", new_user_registration_path, class: "btn btn-primary signup" %>
+          <% end %>
+        </div>
+        <div class="profile-link">
+          <img src="https://placeimg.com/40/40/tech">
+        </div>
+      </nav>
+</div>
